@@ -34,7 +34,7 @@ while(True):
                 while(True):
                     print("Guess a letter")
                     letter = input("Type a letter: ")
-                    if(not len(letter)>1 and (not letter == ""  and not " ") ):
+                    if(not len(letter)>1 and (not letter == ""  and not letter == " ") ):
                         break
                     else:
                         print("Type only one letter, please and no spaces")
