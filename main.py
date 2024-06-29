@@ -31,8 +31,13 @@ while(True):
                 print(letter, end="")
             print("")
             while(True):
-                print("Guess a letter")
-                letter = input("Type a letter: ")
+                while(True):
+                    print("Guess a letter")
+                    letter = input("Type a letter: ")
+                    if(not len(letter)>1 and (not letter == ""  and not " ") ):
+                        break
+                    else:
+                        print("Type only one letter, please and no spaces")
                 i = 0
                 chance_counter = 1
                 lettercounter = 0
